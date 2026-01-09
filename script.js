@@ -292,3 +292,5 @@
     }
     gPrev?.addEventListener("click", ()=> scrollGallery(-1));
     gNext?.addEventListener("click", ()=> scrollGallery(1));
+
+     type="module"
