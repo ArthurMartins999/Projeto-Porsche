@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porsche 911 — Dossiê Interativo</title>
+  <meta name="description" content="Uma experiência informativa premium sobre a Porsche 911: design, engenharia, performance, versões e evolução." />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="noise"></div>
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+  <div class="orb c"></div>
+  <div class="spotlight" id="spotlight"></div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="badge" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M7 17h10l2-6-4-3H9L5 11l2 6Z" stroke="white" stroke-opacity=".9" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9 17l-1 3" stroke="white" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 17l1 3" stroke="white" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <strong>Por dentro do Porsche 911</strong>
+          <small>Design • Engenharia • Performance • Evolução</small>
+        </div>
+      </div>
+
+      <div class="nav-links">
+        <a class="chip" href="#visao">Visão geral</a>
+        <a class="chip" href="#engenharia">Engenharia</a>
+        <a class="chip" href="#specs">Specs</a>
+        <a class="chip" href="#galeria">Galeria</a>
+        <a class="chip" href="#linha">Linha do tempo</a>
+        <a class="chip" href="#faq">FAQ</a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+        Menu
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+          <path d="M5 7h14M5 12h14M5 17h14" stroke="white" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <a href="#visao">Visão geral</a>
+      <a href="#engenharia">Engenharia</a>
+      <a href="#specs">Especificações</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#linha">Linha do tempo</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <section class="panel reveal">
+        <div class="kicker"><span class="dot"></span> Dossiê interativo — navegação com animações e scroll</div>
+
+        <h1 class="hero-title split" id="heroTitle">
+          Porsche 911: <span class="shine">uma linha</span> que evolui sem perder a essência.
+        </h1>
+
+        <p class="hero-sub">
+          Uma experiência informativa com layout premium e micro-interações: arquitetura traseira,
+          aerodinâmica, dinâmica de direção, versões e marcos históricos. Pronto para publicação online.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#specs">
+            Explorar specs
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7" stroke="#061022" stroke-width="2" stroke-linecap="round"/>
+              <path d="M9 7h8v8" stroke="#061022" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <button class="btn ghost" id="btnTour">
+            Tour animado
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M12 6v12" stroke="white" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 12h12" stroke="white" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <aside class="panel reveal">
+        <div class="hero-media" id="heroMedia" data-parallax="0.16">
+          
+        </div>
+
+        <div class="stat-grid stagger">
+          <div class="stat reveal" style="--d:80ms">
+            <div class="num"><span class="count" data-to="60" data-suffix="+">0</span> anos</div>
+            <div class="cap">de evolução contínua</div>
+          </div>
+          <div class="stat reveal" style="--d:160ms">
+            <div class="num"><span class="count" data-to="8" data-suffix="">0</span> gerações</div>
+            <div class="cap">principais (linha moderna)</div>
+          </div>
+          <div class="stat reveal" style="--d:240ms">
+            <div class="num"><span class="count" data-to="3" data-suffix="">0</span> pilares</div>
+            <div class="cap">design, engenharia e direção</div>
+          </div>
+          <div class="stat reveal" style="--d:320ms">
+            <div class="num"><span class="count" data-to="100" data-suffix="%">0</span> foco</div>
+            <div class="cap">em sensação ao volante</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section id="visao">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>Visão geral</h2>
+            <p>O 911 é conhecido por manter a assinatura visual e a filosofia de direção, enquanto evolui em chassi, aerodinâmica e eletrônica.</p>
+          </div>
+        </div>
+
+        <div class="grid3 stagger">
+          <article class="card reveal" style="--d:80ms">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l7 5v8l-7 5-7-5V8l7-5Z" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Identidade</h3>
+            <p>Silhueta reconhecível e presença marcante. A linguagem de design do 911 cria continuidade entre épocas.</p>
+          </article>
+
+          <article class="card reveal" style="--d:160ms">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="white" stroke-opacity=".65" stroke-width="2"/>
+                <path d="M12 7v5l3 2" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Equilíbrio</h3>
+            <p>Refinamento de dinâmica: estabilidade em alta e controle em curvas com assistência eletrônica calibrada.</p>
+          </article>
+
+          <article class="card reveal" style="--d:240ms">
+            <div class="icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 12h16" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6 9l3 3-3 3" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 9l-3 3 3 3" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Performance utilizável</h3>
+            <p>Mais do que números: resposta, tração e precisão. Um esportivo projetado para uso real e pista.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="engenharia">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>Engenharia</h2>
+            <p>Arquitetura traseira, aerodinâmica ativa e chassi: os elementos que constroem a assinatura do 911.</p>
+          </div>
+        </div>
+
+        <div class="grid3 stagger">
+          <article class="card reveal" style="--d:80ms">
+            <h3>Arquitetura traseira</h3>
+            <p>Distribuição de massa e tração influenciam a saída de curva. A calibração de suspensão e controles refina o comportamento.</p>
+          </article>
+
+          <article class="card reveal" style="--d:160ms">
+            <h3>Aerodinâmica e estabilidade</h3>
+            <p>Elementos ativos podem ajustar fluxo e downforce conforme a velocidade, apoiando estabilidade sem penalizar demais a eficiência.</p>
+          </article>
+
+          <article class="card reveal" style="--d:240ms">
+            <h3>Direção e controle</h3>
+            <p>Um acerto que busca feedback: assistência presente quando necessário, mas com foco em sensação e precisão.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="specs">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>Especificações (interativas)</h2>
+            <p>Selecione uma configuração para atualizar os cards e os indicadores animados. (Conteúdo editável.)</p>
+          </div>
+        </div>
+
+        <div class="specs">
+          <div class="panel reveal">
+            <div class="tabs" role="tablist" aria-label="Versões do 911 (exemplo)">
+              <button class="tab active" data-car="base" role="tab">911 Carrera</button>
+              <button class="tab" data-car="s" role="tab">Carrera S</button>
+              <button class="tab" data-car="gts" role="tab">GTS</button>
+              <button class="tab" data-car="turbo" role="tab">Turbo</button>
+            </div>
+
+            <div class="spec-grid" id="specGrid" aria-live="polite"></div>
+          </div>
+
+          <div class="panel reveal">
+            <h3 style="margin:0 0 10px; font-size:14px; font-weight:1000;">Indicadores</h3>
+
+            <div class="spec" style="margin-bottom:10px;">
+              <div class="k">Aceleração (0–100)</div>
+              <div class="v"><span id="accText">—</span> s</div>
+              <div class="meter"><i id="accBar"></i></div>
+            </div>
+
+            <div class="spec" style="margin-bottom:10px;">
+              <div class="k">Potência</div>
+              <div class="v"><span id="hpText">—</span> hp</div>
+              <div class="meter"><i id="hpBar"></i></div>
+            </div>
+
+            <div class="spec">
+              <div class="k">Velocidade máxima</div>
+              <div class="v"><span id="vmaxText">—</span> km/h</div>
+              <div class="meter"><i id="vmaxBar"></i></div>
+            </div>
+
+            <p style="margin:12px 0 0; color:var(--muted2); font-size:12px; line-height:1.5;">
+              Observação: substitua os valores de exemplo pelos dados da geração/versão desejada para deixar o conteúdo factual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>Galeria (scroll horizontal)</h2>
+            <p>Cards com snap e micro-interações. Ideal para inserir fotos reais (WebP) e descrições curtas.</p>
+          </div>
+        </div>
+
+        <div class="gallery-wrap reveal">
+          <div class="gallery-top">
+            <strong>Arraste/role horizontalmente • ou use as setas</strong>
+            <div class="gal-btns">
+              <button class="gbtn" id="gPrev" aria-label="Anterior">←</button>
+              <button class="gbtn" id="gNext" aria-label="Próximo">→</button>
+            </div>
+          </div>
+
+<div class="gallery" id="gallery">
+  <div class="shot reveal s1">
+    <div class="cap">Frente • assinatura dos faróis</div>
+  </div>
+
+  <div class="shot reveal s2">
+    <div class="cap">Perfil • linha clássica</div>
+  </div>
+
+  <div class="shot reveal s3">
+    <div class="cap">Traseira • largura e presença</div>
+  </div>
+
+  <div class="shot reveal s4">
+    <div class="cap">Interior • foco no condutor</div>
+  </div>
+</div>
+
+    </section>
+
+    <section id="linha">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>Linha do tempo</h2>
+            <p>Marcos históricos (resumo). Você pode detalhar por gerações (ex.: 930, 964, 993, 996, 997, 991, 992).</p>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="titem reveal">
+            <div class="ty">1963</div>
+            <div>
+              <p class="tt">Conceito e identidade inicial</p>
+              <p class="tx">Fundação da proposta: esportivo com personalidade e evolução contínua.</p>
+            </div>
+          </div>
+          <div class="titem reveal">
+            <div class="ty">1970s</div>
+            <div>
+              <p class="tt">Alta performance e turbo</p>
+              <p class="tx">A linha ganha versões emblemáticas voltadas a desempenho e cultura automotiva.</p>
+            </div>
+          </div>
+          <div class="titem reveal">
+            <div class="ty">1990s</div>
+            <div>
+              <p class="tt">Refinamento técnico</p>
+              <p class="tx">Evolução de conforto, segurança e respostas do conjunto mantendo a essência.</p>
+            </div>
+          </div>
+          <div class="titem reveal">
+            <div class="ty">2010s+</div>
+            <div>
+              <p class="tt">Aerodinâmica ativa e eletrônica</p>
+              <p class="tx">Mais controle e estabilidade em alta com sistemas modernos e acerto focado em dirigibilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="head reveal">
+          <div>
+            <h2>FAQ</h2>
+            <p>Respostas rápidas para dúvidas comuns — ideal para enriquecer o conteúdo e melhorar a navegação.</p>
+          </div>
+        </div>
+
+        <div class="accordion reveal">
+          <details>
+            <summary>
+              O que torna o 911 diferente de outros esportivos?
+              <span class="chev" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10l5 5 5-5" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="acc-body">
+              A arquitetura (com motor traseiro) influencia tração e comportamento. A identidade se mantém enquanto a engenharia evolui geração após geração.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              A Porsche usa materiais especiais na construção do 911?
+              <span class="chev" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10l5 5 5-5" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="acc-body">
+              Sim. A Porsche utiliza alumínio, aço de alta resistência e compósitos para otimizar peso, rigidez e segurança.
+            </div>
+          </details>
+
+          <details>
+            <summary>
+              Quanto custa em média um Porsche 911 novo?
+              <span class="chev" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 10l5 5 5-5" stroke="white" stroke-opacity=".85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </summary>
+            <div class="acc-body">
+                O preço varia conforme a versão e opcionais, mas geralmente começa em torno de US$ 100.000 para modelos básicos.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+   
+
+  <footer>
+    <div class="container foot">
+      <small>
+        Conteúdo informativo • Layout responsivo • Animações leves • Compatível com publicação em GitHub Pages / Netlify / Vercel.
+      </small>
+      
+  </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
